@@ -1,1 +1,1 @@
-See on Sissejuhatus erialasse 9.seminari järelkodutööks loodud fail
+Siin on 1. tudengi poolt loodud teksti muudatused.
