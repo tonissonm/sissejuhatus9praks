@@ -1,0 +1,168 @@
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:"Josefin Sans",sans-serif;
+  background:#f6f2ec;
+  color:#444;
+  line-height:1.5
+}
+
+.page-wrapper{
+  max-width:1100px;
+  margin:2rem auto;
+  padding:1rem 2rem;
+  background:#fff;
+  border-radius:12px
+}
+
+.hero-layout{
+  display:grid;
+  grid-template-columns:3fr 2fr;
+  gap:2rem
+}
+
+.salon-header{
+  display:flex;
+  align-items:center;
+  gap:1rem
+}
+
+.logo-circle{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background:#e6d8c8;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  color:#5a4638
+}
+
+.salon-name{
+  text-transform:uppercase;
+  font-size:1.8rem
+}
+
+.salon-tagline{
+  font-size:.9rem;
+  color:#7b6a5d
+}
+
+.main-nav{
+  display:flex;
+  gap:.6rem
+}
+
+.btn{
+  padding:.5rem 1.1rem;
+  border-radius:20px;
+  text-decoration:none;
+  font-size:.85rem;
+  text-transform:uppercase;
+  border:1px solid #c6a98c;
+  color:#5b4638
+}
+
+.btn.primary{
+  background:#b88c6a;
+  color:#fff;
+  border:none
+}
+
+.intro-text h2{
+  margin-bottom:.2rem;
+  font-size:1.3rem
+}
+
+.gallery-main{
+  max-width:600px;
+  max-height:420px;
+  background:#ddd;
+  border-radius:12px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  scroll-snap-type:x mandatory;
+  white-space:nowrap
+}
+
+.gallery-carousel{
+  display:flex;
+  list-style:none;
+  width:100%;
+  height:100%
+}
+
+.gallery-carousel li{
+  flex:0 0 100%;
+  height:100%;
+  scroll-snap-align:center
+}
+
+.gallery-carousel img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block
+}
+
+.social-bar{
+  display:flex;
+  flex-direction:row;
+  gap:.4rem;
+  align-items:center;
+}
+
+.social-icons{
+  display:flex;
+  flex-direction:row;
+  gap:.4rem;
+}
+
+.social-btn{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  border:1px solid #c2b3a8;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#fff;
+  color:#5a4638;
+}
+
+.social-btn.active-link{
+  background:#2c4160;
+  color:#fff;
+  border:none;
+}
+
+
+.map-card{
+  border:1px solid #e0d4c4;
+  border-radius:10px;
+  padding:1rem
+}
+
+.map-frame iframe{
+  width:100%;
+  height:220px;
+  border:none;
+  border-radius:8px
+}
+
+.contact-details h3{
+  margin-bottom:.3rem
+}
+
+.site-footer{
+  margin-top:2rem;
+  text-align:center;
+  font-size:.8rem;
+  color:#777
+}
+
+@media(max-width:900px){
+  .hero-layout{grid-template-columns:1fr}
+  .gallery-main{width:100%}
+}

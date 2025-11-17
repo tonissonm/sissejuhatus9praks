@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hinnakiri – Minu Ilutuba</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper pricing-page">
+    <header class="top-bar">
+      <a href="index.html" class="logo-link">
+        <span class="logo-circle small">MI</span>
+        <span class="logo-text">Minu Ilutuba</span>
+      </a>
+      <nav class="top-nav">
+        <a href="index.html">Pealeht</a>
+        <a href="hinnakiri.html" class="active">Hinnakiri</a>
+        <a href="broneeri.html">Broneeri aeg</a>
+      </nav>
+    </header>
+
+    <main class="pricing-layout">
+      <section>
+        <h1>Hinnakiri</h1>
+        <p class="page-intro">
+          Allolevad hinnad on näidised – tegelik hinnakiri valmib koos kliendiga.
+        </p>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h2>Näohooldused</h2>
+            <ul class="price-list">
+              <li>
+                <span>Klassikaline näohooldus (60 min)</span>
+                <span class="price">55 €</span>
+              </li>
+              <li>
+                <span>Niisutav hooldus tundlikule nahale (75 min)</span>
+                <span class="price">65 €</span>
+              </li>
+              <li>
+                <span>Pinguldav luksushooldus (90 min)</span>
+                <span class="price">79 €</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <h2>Käed ja jalad</h2>
+            <ul class="price-list">
+              <li>
+                <span>Klassikaline maniküür</span>
+                <span class="price">30 €</span>
+              </li>
+              <li>
+                <span>Geellakk maniküür</span>
+                <span class="price">38 €</span>
+              </li>
+              <li>
+                <span>Pediküür (75 min)</span>
+                <span class="price">45 €</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <h2>Kehahooldused</h2>
+            <ul class="price-list">
+              <li>
+                <span>Lõõgastav täiskehahooldus (60 min)</span>
+                <span class="price">59 €</span>
+              </li>
+              <li>
+                <span>Seljamassaaž (30 min)</span>
+                <span class="price">32 €</span>
+              </li>
+              <li>
+                <span>Aroomiteraapiline kehahooldus (75 min)</span>
+                <span class="price">72 €</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <h2>Lisateenused</h2>
+            <ul class="price-list">
+              <li>
+                <span>Kulmude kujundus ja värvimine</span>
+                <span class="price">18 €</span>
+              </li>
+              <li>
+                <span>Ripsmete värvimine</span>
+                <span class="price">15 €</span>
+              </li>
+              <li>
+                <span>Parafiinmask kätele</span>
+                <span class="price">12 €</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small>&copy; <span id="year"></span> Minu Ilutuba. Tegemist on näidishinnakirjaga.</small>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
